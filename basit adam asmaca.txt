@@ -1,0 +1,35 @@
+print("""Adam Asmaca Oyununa Hoş Geldiniz...
+
+Kategori: Film
+_ _ / _ _ _ _ _ _ _
+Uyarı: 6. yanlışınızda oyun sonlanacaktır.
+Başarılar!""")
+
+sozcuk="av mevsimi"
+hak=6
+
+while hak>0:
+  tahmin=input("Bir harf tahmin ediniz: ").lower()
+
+  if tahmin in sozcuk:
+    print("Doğru tahmin :)")
+
+    if tahmin == "a" :
+      print("İlk harf a'dır.")
+    elif tahmin == "v" :
+      print("2. ve 5. harfler v'dir.")
+    elif tahmin == "m" :
+      print("3. ve 8. harfler m'dir.")
+    elif tahmin == "e" :
+      print("4. harf e'dir.")
+    elif tahmin == "s" :
+      print("6. harf s'dir.")
+    elif tahmin == "i" :
+      print("7. ve 9. harfler i'dir.")
+
+
+  else:
+    hak=hak-1
+    print("Yanlış tahmin,",hak,"hata yapma hakkınız kaldı...")
+
+print("Elendiniz :(")
